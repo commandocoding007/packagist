@@ -1,0 +1,24 @@
+{
+    "name": "Commandocoding\\Desktop",
+    "type": "library",
+    "description": "Trial packagist for commando coding",
+    "keywords": ["log","logging"],
+    "homepage": "https://commandocoding.herokuapp.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "commando coding",
+            "email": "commandocoding@hotmail.com",
+            "homepage": "https://commandocoding.herokuapp.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+                "Commandocoding\\Desktop\\": "src/"
+            }
+    }
+}
