@@ -6,6 +6,7 @@
     "homepage": "https://commandocoding.herokuapp.com",
     "license": "MIT",
     "version": "0.0.1",
+    "minimum-stability": "STABLE",
     "authors": [
         {
             "name": "commando coding",
