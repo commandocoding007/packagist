@@ -1,5 +1,5 @@
 {
-    "name": "Commandocoding\\Desktop",
+    "name": "commandocoding/desktop",
     "type": "library",
     "description": "Trial packagist for commando coding",
     "keywords": ["log","logging"],
