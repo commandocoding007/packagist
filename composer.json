@@ -5,6 +5,7 @@
     "keywords": ["log","logging"],
     "homepage": "https://commandocoding.herokuapp.com",
     "license": "MIT",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "commando coding",
