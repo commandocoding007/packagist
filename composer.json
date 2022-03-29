@@ -19,7 +19,7 @@
     "autoload": {
         "psr-4": {
                 "Commandocoding\\Desktop\\": "./",
-                "Commandocoding\\Giophpclass\\": "./"
+                "Commandocoding\\Gio\\": "./"
             }
     }
 }
