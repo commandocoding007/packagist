@@ -1,5 +1,5 @@
 <?php
-namespace Gommandocoding\Gio; 
+namespace Commandocoding\Desktop ; 
 class Gio {
   public  $targetPath;
   private $scriptFile;
