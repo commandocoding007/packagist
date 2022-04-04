@@ -1,4 +1,6 @@
+build_number
 example.php
 packagist.code-workspace
 vendor/*
-resources
+resources/*
+
