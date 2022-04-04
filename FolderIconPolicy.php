@@ -111,7 +111,7 @@ class FolderIconPolicy
     function codeSample(){
         $snippet= "
         \$target=getcwd();
-        \$f = new Commandocoding\Desktop\folderIconPolicy();
+        \$f = new Commandocoding\\Desktop\\folderIconPolicy();
         \$f->setFolder(\$target);
         \$f->getIconList();
         \$aryIcons=\$f->getIconList();
