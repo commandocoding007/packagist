@@ -81,6 +81,8 @@ class FolderIconPolicy
         $iconfile[]="commandocoding/" . $this->folderBaseName.".png";        
         $iconfile[]= $this->folderBaseName.".svg";
         $iconfile[]=$this->folderBaseName.".png";
+        $iconfile[]=".icon.svg";
+        $iconfile[]=".icon.png";
         $iconfile[]="icon.svg";
         $iconfile[]="icon.png";
   
