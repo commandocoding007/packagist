@@ -82,6 +82,8 @@ class FolderIconPolicy
         $iconfile[]=$this->folderBaseName.".svg";
         $iconfile[]=$this->folderBaseName.".png";
         $iconfile[]=".icon.svg";
+        $iconfile[]="icon.svg";
+        $iconfile[]="icon.png";
         $iconfile[]=".icon.png";
 
   
