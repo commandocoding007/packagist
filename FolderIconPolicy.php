@@ -79,22 +79,22 @@ class FolderIconPolicy
         $iconfile[]="commandocoding/icon.svg";
         $iconfile[]="commandocoding/" . $this->folderBaseName.".svg";
         $iconfile[]="commandocoding/" . $this->folderBaseName.".png";        
-        $iconfile[]= $this->folderBaseName.".svg";
+        $iconfile[]=$this->folderBaseName.".svg";
         $iconfile[]=$this->folderBaseName.".png";
         $iconfile[]=".icon.svg";
         $iconfile[]=".icon.png";
-        $iconfile[]="icon.svg";
-        $iconfile[]="icon.png";
+
   
         // CHECK ALL HIDDEN FILES
         foreach ($iconfile as $curIconFile){
-            $curIconFile=$this->folderPath . "/." .$curIconFile ;
+            $curIconFile=$this->folderPath . "/" .$curIconFile ;
             $curIconFile . PHP_EOL;
             if(is_file($curIconFile)==true) {
                 $this->availableIconsList[]=$curIconFile;
             }// endif
         }//end foreach
         // CHECK ALL NOT HIDDEN FILES   
+        /*
         foreach ($iconfile as $curIconFile){
             $curIconFile=$this->folderPath . "/" .$curIconFile ;
             //echo $curIconFile . PHP_EOL;
@@ -102,7 +102,7 @@ class FolderIconPolicy
                 $this->availableIconsList[]=$curIconFile;
             }// endif
         }//end foreach
-        
+        */
         $this->numberOfIconFound=count($this->availableIconsList);
     }
 
