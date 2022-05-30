@@ -26,8 +26,13 @@ class Gio
         $this->verbose          = false;
         $this->targetPath       = getcwd();
         $this->scriptFile       = __FILE__;
-        $this->gnomeVersion     =exec("gnome-shell --version");
-        $this->returnDataType  ="json";    
+        $this->returnDataType   = "json";
+         
+        if(exec("which gnome-shell") !== ""){
+            $this->gnomeVersion = exec("gnome-shell --version");
+        }else{
+            $this->gnomeVersion = null;
+        }
     }// end function
     public function setFolderIcon($iconFile)
     {
