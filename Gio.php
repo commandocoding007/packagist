@@ -19,7 +19,6 @@ class Gio
 {
     public  $targetPath;
     private $scriptFile;
-    private $gnomeVersion;
     public $returnDataType;
     function __construct()
     {
@@ -28,11 +27,7 @@ class Gio
         $this->scriptFile       = __FILE__;
         $this->returnDataType   = "json";
          
-        if(exec("which gnome-shell") !== ""){
-            $this->gnomeVersion = exec("gnome-shell --version");
-        }else{
-            $this->gnomeVersion = null;
-        }
+
     }// end function
     public function setFolderIcon($iconFile)
     {
