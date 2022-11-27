@@ -1,12 +1,12 @@
 <?php
 /**
-* File and folder naming convention
-*
-* This file contains the policy for file and folder name 
-* for known file types in commando coding project
-*
-* No licences yet
-*/
+ * File and folder naming convention
+ *
+ * This file contains the policy for file and folder name 
+ * for known file types in commando coding project
+ *
+ * No licences yet
+ */
 namespace Commandocoding\Desktop ;
 /** 
 This class shall impliment the policy based on which a folder icon is  selected. 
@@ -42,18 +42,28 @@ class FolderIconPolicy
     private $parseSubPath;
     private $availableIconsList;
     private $numberOfIconFound;
-    
+    private $_hasHiddenCommandoFolder;
     public function __construct()
     {
         $this->folderPath=getcwd();
+        $this->_hasHiddenCommandoFolder();
         $this->parseSubPath=true;
-        $this->folderCheck(); 
-               
+        $this->folderCheck();    
+    }
+    //TODO This needs to be completed 
+    private function _hasHiddenCommandoFolder(){
+        $subfolderPath=$this->folderPath . "/.CommandoCoding";
+        if(is_dir($subfolderPath)){
+            $this->_hasHiddenCommandoFolder=true;
+        }else{
+            $this->_hasHiddenCommandoFolder=false;
+        }
     }
     function setFolder($folderPath)
     {
         $this->folderPath=$folderPath;        
         //echo __LINE__ .  " setFolder : " . $this->folderPath . PHP_EOL;
+        $this->_hasHiddenCommandoFolder();
 
         $this->folderCheck();    
         //echo __LINE__ . " setFolder : " . $this->folderPath . PHP_EOL;
@@ -124,13 +134,4 @@ class FolderIconPolicy
         return $snippet;
     }
 }
-/*
-$target="/home/commando/Documents/Programming/CommandCodingMaster/testfolder";
-$f = new folderIconPolicy();
-$f->setFolder($target);
-//$f->folderCheck();
-//$f->folderCheck();
-//$f->getIconList();
-$aryIcons=$f->getIconList();
-print_r($aryIcons);
-*/
+

@@ -90,21 +90,3 @@ class Gio
     }// end function
 }// end class
 
-/*
-"gio set -t stringv '/home/commando/Documents/Programming/BackupSync/read.txt' metadata::emblems 'emblem-default'";
-
-//gvfs-set-attribute -t string <filename> metadata::custom-icon file:///home/user/path/to/icon.png
-$e[]="emblem-default";
-$e[]="emblem-documents";
-$e[]="emblem-downloads";
-$e[]="emblem-favorite";
-$e[]="emblem-important";
-$e[]="emblem-mail";
-$e[]="emblem-photos";
-$e[]="emblem-readonly";
-$e[]="emblem-shared";
-$e[]="emblem-symbolic-link";
-$e[]="emblem-synchronized";
-$e[]="emblem-system";
-$e[]="emblem-unreadable";
-*/
